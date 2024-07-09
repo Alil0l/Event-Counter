@@ -1,0 +1,87 @@
+// No need for global rules bcs bootstrap adds it.
+$bs-main-color: #0d6efd;
+$bs-sec-color: #cde1f8;
+// Mixins
+// Adding local fonts
+@mixin font($font-family, $font-files) {
+  @each $font-file, $font-weight in $font-files {
+    @font-face {
+      font-family: "#{$font-family}-#{$font-weight}";
+      src: url("#{$font-file}.ttf");
+      font-weight: $font-weight;
+    }
+  }
+}
+$Poppins-font-files: (("../assets/fonts/Poppins-ExtraLight", 200));
+$Raleway-font-files: (
+  ("../assets/fonts/Raleway-Black", 800),
+  ("../assets/fonts/Poppins-Bold", 700),
+  ("../assets/fonts/Poppins-Medium", 600),
+  ("../assets/fonts/Poppins-Regular", 400)
+);
+@include font("Raleway", $Raleway-font-files);
+@include font("Poppins", $Poppins-font-files);
+// Global classes
+.h-100vh {
+  height: 100dvh;
+}
+body {
+  background-color: #f5f5f5;
+}
+// End of  mixins and classes
+
+//  Start of the main stylesheet
+.sec-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 24px 0;
+  font-family: "Raleway Black";
+
+  h2 {
+    font-size: 54px;
+  }
+}
+
+// main
+header {
+  background-image: linear-gradient(
+      hsla(0, 0%, 10%, 0.6),
+      hsla(0, 0%, 10%, 0.6)
+    ),
+    url("../assets/images/EventGathering.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  .header-content {
+    color: white;
+    h1 {
+      font-family: "Raleway Black";
+      font-size: 6rem;
+    }
+    p {
+      font-size: 3rem;
+      margin-bottom: 0px;
+      line-height: 0.8;
+      // add animation
+    }
+    .icons {
+      a {
+        color: white;
+      }
+    }
+  }
+  margin-bottom: 2rem;
+}
+#section1 {
+}
+#section2 {
+}
+#section3 {
+}

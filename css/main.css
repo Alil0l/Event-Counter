@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Raleway-800";
+  src: url("../assets/fonts/Raleway-Black.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Raleway-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway-600";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Poppins-";
+  src: url("200.ttf");
+}
+.h-100vh {
+  height: 100dvh;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.sec-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 24px 0;
+  font-family: "Raleway Black";
+}
+.sec-title h2 {
+  font-size: 54px;
+}
+
+header {
+  background-image: linear-gradient(hsla(0, 0%, 10%, 0.6), hsla(0, 0%, 10%, 0.6)), url("../assets/images/EventGathering.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+header .header-content {
+  color: white;
+}
+header .header-content h1 {
+  font-family: "Raleway Black";
+  font-size: 6rem;
+}
+header .header-content p {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  line-height: 0.8;
+}
+header .header-content .icons a {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
