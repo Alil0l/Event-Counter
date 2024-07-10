@@ -15,3 +15,9 @@ setTimeout(() => {
 setTimeout(() => {
   animateI4.classList.add("fa-beat");
 }, 500);
+
+$(".accordion-header").on("click", function (e) {
+  $(".accordion-header + .accordion-body").slideUp();
+  if ($(e.target).next().css("display") == "none")
+    $(e.target).next().slideToggle();
+});

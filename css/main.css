@@ -19,12 +19,8 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "Poppins-";
-  src: url("../assets/fonts/Poppins-ExtraLight.ttf");
-}
-@font-face {
-  font-family: "Poppins-";
-  src: url("200.ttf");
+  font-family: "Poppins Light";
+  src: url("../assets/fonts/Poppins-Light.ttf");
 }
 .h-100vh {
   height: 100dvh;
@@ -36,12 +32,6 @@ body {
 
 .sec-title {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 60%;
   margin: auto;
   padding: 24px 0;
   font-family: "Raleway Black";
@@ -72,4 +62,48 @@ header .header-content p {
 }
 header .header-content .icons a {
   color: white;
+}
+
+#section1 .accordion-item .accordion-header {
+  padding: 8px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 2px solid black;
+  border-left: 4px solid black;
+  gap: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#section1 .accordion-item i {
+  font-size: 26px;
+  order: -1;
+}
+#section1 .accordion-body {
+  text-align: justify;
+  display: none;
+}
+
+#section2 .counters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: saddlebrown;
+}
+#section2 .counters .counter-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+#section2 .counters .counter-item div:first-child {
+  font-size: 1.2rem;
+  font-family: "Poppins Light";
+}
+#section2 .counters .counter-item div:last-child {
+  font-size: 3rem;
+  font-family: "Raleway Black";
 }/*# sourceMappingURL=main.css.map */

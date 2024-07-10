@@ -12,7 +12,6 @@ $bs-sec-color: #cde1f8;
     }
   }
 }
-$Poppins-font-files: (("../assets/fonts/Poppins-ExtraLight", 200));
 $Raleway-font-files: (
   ("../assets/fonts/Raleway-Black", 800),
   ("../assets/fonts/Poppins-Bold", 700),
@@ -20,7 +19,10 @@ $Raleway-font-files: (
   ("../assets/fonts/Poppins-Regular", 400)
 );
 @include font("Raleway", $Raleway-font-files);
-@include font("Poppins", $Poppins-font-files);
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../assets/fonts/Poppins-Light.ttf");
+}
 // Global classes
 .h-100vh {
   height: 100dvh;
@@ -33,12 +35,6 @@ body {
 //  Start of the main stylesheet
 .sec-title {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 60%;
   margin: auto;
   padding: 24px 0;
   font-family: "Raleway Black";
@@ -80,8 +76,51 @@ header {
   margin-bottom: 2rem;
 }
 #section1 {
+  .accordion-item {
+    .accordion-header {
+      padding: 8px 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: baseline;
+      border-bottom: 2px solid black;
+      border-left: 4px solid black;
+      gap: 24px;
+      user-select: none;
+    }
+    i {
+      font-size: 26px;
+      order: -1;
+    }
+  }
+  .accordion-body {
+    text-align: justify;
+    display: none;
+  }
 }
+
 #section2 {
+  .counters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: saddlebrown;
+    .counter-item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      background-color: aliceblue;
+      border-radius: 8px;
+      div:first-child {
+        font-size: 1.2rem;
+        font-family: "Poppins Light";
+      }
+      div:last-child {
+        font-size: 3rem;
+        font-family: "Raleway Black";
+      }
+    }
+  }
 }
 #section3 {
 }
