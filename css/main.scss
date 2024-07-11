@@ -56,6 +56,13 @@ body {
     font-size: 54px;
   }
 }
+@media (max-width: 576px) {
+  .sec-title {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
 //  Start of the main stylesheet
 nav {
   .sideGrp {
@@ -187,6 +194,7 @@ footer {
         font-family: "Raleway Medium";
       }
       p {
+        text-align: justify;
         i {
           width: 40px;
           color: #00176a;

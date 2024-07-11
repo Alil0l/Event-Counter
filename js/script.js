@@ -28,10 +28,8 @@ let charsNum = $(".charsNum");
 $(".open").on("click", function () {
   $(".sideGrp").animate({ width: "toggle" }, 350);
   $(".open").hide();
-  $(document).on("click", function (e) {
-    console.log(e.target);
-  });
 });
+
 $(".close").on("click", function () {
   $(".sideGrp").animate({ width: "toggle" });
   $(".open").show("slow");
